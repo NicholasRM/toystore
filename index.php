@@ -33,6 +33,10 @@
 	/*
 	 * TO-DO: Retrieve info for ALL remaining toys from the db
 	 */
+	$rest_toys = array();
+	for ($t = 2; $t <= 10; $t++) {
+		$rest_toys[$t] = get_toy($pdo, str_pad(strval($t), 4, '0', STR_PAD_LEFT));
+	}
 
 
 // Closing PHP tag  ?> 
@@ -97,75 +101,75 @@
   				  -->
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[2]['toynum'] ?>">
+  						<img src="<?= $rest_toys[2]['imgSrc'] ?>" alt="<?= $rest_toys[2]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[2]['name'] ?></h2>
+  					<p>$<?= $rest_toys[2]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[3]['toynum'] ?>">
+  						<img src="<?= $rest_toys[3]['imgSrc'] ?>" alt="<?= $rest_toys[3]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[3]['name'] ?></h2>
+  					<p>$<?= $rest_toys[3]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[4]['toynum'] ?>">
+  						<img src="<?= $rest_toys[4]['imgSrc'] ?>" alt="<?= $rest_toys[4]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[4]['name'] ?></h2>
+  					<p>$<?= $rest_toys[4]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[5]['toynum'] ?>">
+  						<img src="<?= $rest_toys[5]['imgSrc'] ?>" alt="<?= $rest_toys[5]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[5]['name'] ?></h2>
+  					<p>$<?= $rest_toys[5]['price'] ?></p>
   				</div>
   				
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[6]['toynum'] ?>">
+  						<img src="<?= $rest_toys[6]['imgSrc'] ?>" alt="<?= $rest_toys[6]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[6]['name'] ?></h2>
+  					<p>$<?= $rest_toys[6]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[7]['toynum'] ?>">
+  						<img src="<?= $rest_toys[7]['imgSrc'] ?>" alt="<?= $rest_toys[7]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[7]['name'] ?></h2>
+  					<p>$<?= $rest_toys[7]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[8]['toynum'] ?>">
+  						<img src="<?= $rest_toys[8]['imgSrc'] ?>" alt="<?= $rest_toys[8]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[8]['name'] ?></h2>
+  					<p>$<?= $rest_toys[8]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[9]['toynum'] ?>">
+  						<img src="<?= $rest_toys[9]['imgSrc'] ?>" alt="<?= $rest_toys[9]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[9]['name'] ?></h2>
+  					<p>$<?= $rest_toys[9]['price'] ?></p>
   				</div>
 
   				<div class="toy-card">
-  					<a href="toy.php?toynum=<?= '' ?>">
-  						<img src="<?= '' ?>" alt="<?= '' ?>">
+  					<a href="toy.php?toynum=<?= $rest_toys[10]['toynum'] ?>">
+  						<img src="<?= $rest_toys[10]['imgSrc'] ?>" alt="<?= $rest_toys[10]['name'] ?>">
   					</a>
-  					<h2><?= '' ?></h2>
-  					<p>$<?= '' ?></p>
+  					<h2><?= $rest_toys[10]['name'] ?></h2>
+  					<p>$<?= $rest_toys[10]['price'] ?></p>
   				</div>
 
   			</section>
